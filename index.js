@@ -1,6 +1,7 @@
 function produceDrivingRange(blockRange){
   return function(street1, street2){
   const st1 = street1.replace(/\D/g,'');
+    const st2 = street2.replace(/\D/g,'');
     if(blockRange > trip){
       return `within range by ${blockRange-trip}`
     } else {
