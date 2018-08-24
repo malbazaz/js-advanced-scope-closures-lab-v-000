@@ -14,6 +14,6 @@
 
   function produceTipCalculator(pct){
     return function(amt){
-      return amt *(1+pct);
+      return amt *(1+adjPct);
     }
   }
