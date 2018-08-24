@@ -13,6 +13,7 @@
   }
 
   function produceTipCalculator(pct){
+    const adjPct = pct
     return function(amt){
       return amt *(1+adjPct);
     }
