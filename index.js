@@ -13,8 +13,19 @@
   }
 
   function produceTipCalculator(pct){
-    const adjPct = pct
+    const adjPct = pct;
     return function(amt){
       return amt *(adjPct);
     }
   }
+
+function createDriver(){
+  let driverId = 0;
+
+  return class{
+    constructor(name){
+      this.name = name;
+      this.id = ++driverId;
+    }
+  }
+}
